@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<section id="intro">
+
+  <header>
+    <a href="/">
+      <img src="/logo.png" alt="Logo">
+    </a>
+  </header>
+
+  <main>
+    <p>
+      Staying at home for long periods shouldn't be easy.
+    </p>
+  
+    <p>
+      So we’ll catalog <strong>ideas, games, games, movies,
+      books, raw materials, tips</strong> and everything necessary to make this
+      most interesting moment.
+    </p>
+  
+    <p>
+      Start by clicking on see ideas to see the
+      registered ideas and contribute adding your idea.
+    </p>
+  </main>
+
+  <section id="buttons">
+    <button onclick="onOff()">+ Add Idea</button>
+    <a href="/idea" class="button">See Ideas</a href="//">
+  </section>
+
+  <footer id="footer">
+    With 🥰 <a href="https://www.linkedin.com/in/henrique-campaner/" target="_blank">Henrique</a>
+  </footer>
+</section>
+
+<section id="last-ideias">
+
+  {% include "all_Ideas.html" %}
+
+</section>
+
+{% endblock %}

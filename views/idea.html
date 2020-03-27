@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  <title>Ideas - Creative House</title>
+{% endblock title %}
+
+{% set bodyId = "page-ideas" %}
+
+{% block content %}
+
+<header>
+    <a href="/">
+      <img src="/logo.png" alt="Logo">
+    </a>
+  
+    <nav>
+      <li><a href="/">Home</a></li>
+      <li><a href="#" onclick="onOff()" class="button">New Idea</a></li>
+    </nav>
+  </header>
+  <section id="title">
+    <p>on display</p>
+    <h1>Ideias</h1>
+  </section>
+  <main >
+    <section id="ideias">
+      {% include "all_Ideas.html" %}
+    </section>
+  </main>
+  <footer id="footer">
+    With 🥰 <a href="https://www.linkedin.com/in/henrique-campaner/" target="_blank">Henrique</a>
+  </footer>
+</div>
+
+{% endblock %}
