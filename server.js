@@ -107,4 +107,4 @@ server.post('/idea', (req, res) => {
     });
 })
 
-server.listen(3333);
+server.listen(3343);
